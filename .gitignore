@@ -1,0 +1,7 @@
+python/LEDGER.md
+typescript/LEDGER.md
+__pycache__/
+*.pyc
+node_modules/
+*.js
+*.d.ts
