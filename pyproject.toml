@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-ledger"
+version = "0.1.0"
+description = "Append-only, hash-chained coordination ledger for multi-agent AI systems"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Aditi Chatterji", email = "aditi@aditichatterji.com" }]
+keywords = ["agents", "multi-agent", "coordination", "ledger", "audit-trail", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.scripts]
+agent-ledger = "python.ledger:main"
+
+[project.urls]
+Homepage = "https://github.com/adu3110/agent-ledger"
+Repository = "https://github.com/adu3110/agent-ledger"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["python*"]
